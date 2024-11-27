@@ -59,5 +59,6 @@ The model combines the above factors with the following weighted scoring formula
 
 # Run Streamlit app
 
-```streamlit run streamlit.py
+```
+streamlit run streamlit.py
 ```
