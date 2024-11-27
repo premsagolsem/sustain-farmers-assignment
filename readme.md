@@ -1,23 +1,14 @@
+## Install packages
+```pip install -r requirements.txt```
 
-`pip install -r requirements.txt`
 
 
-
-The FastAPI backend exposes an API endpoint to calculate the financial score based on input data.
+## The FastAPI
 
 Endpoint: /calculate_score
 Method: POST
-Request Body: JSON with the following fields:
-family_id: (string) Family identifier.
-income: (float) Monthly income.
-savings: (float) Total savings.
-monthly_expenses: (float) Monthly expenses.
-loan_payments: (float) Monthly loan payments.
-credit_card_spending: (array) List of credit card spending amounts over a period.
-category_spending: (dict) Dictionary of spending by category (e.g., {'Groceries': 1000, 'Travel': 500}).
-financial_goals_met: (float) Percentage of financial goals met.
-
-{
+Request Body: JSON with the following fields
+```{
   "family_id": "FAM001",
   "income": 100000,
   "savings": 20000,
@@ -31,8 +22,9 @@ financial_goals_met: (float) Percentage of financial goals met.
   },
   "financial_goals_met": 75
 }
+```
 
-
+## Model Logic
 
 The first i had calculated the financial score  based on several factors that represent a family’s financial health from the given data. Here’s the breakdown of the scoring logic that i used.
 
@@ -67,4 +59,5 @@ The model combines the above factors with the following weighted scoring formula
 
 # Run Streamlit app
 
-`streamlit run streamlit.py`
+```streamlit run streamlit.py
+```
